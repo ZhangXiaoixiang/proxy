@@ -16,7 +16,5 @@ public class Test {
         ISinger proxy = (ISinger)Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(),
                 new Class[]{ISinger.class}, handler);
         proxy.sing();
-
-
     }
 }
